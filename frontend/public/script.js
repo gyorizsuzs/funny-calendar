@@ -6,11 +6,11 @@ const headerComponent = function (title) {
       `;
 };
 
-/* const yearComponent = function () {
+const yearComponent = function () {
   return `
         <div class='year-container'></div>
     `;
-}; */
+};
 
 /* const monthComponent = function (name) {
   return `
@@ -39,8 +39,8 @@ const footerComponent = function (copyrights) {
     `;
 };
 
-/* root.insertAdjacentHTML("beforebegin", headerComponent("2022"));
 root.insertAdjacentHTML("beforeend", yearComponent());
+/* root.insertAdjacentHTML("beforebegin", headerComponent("2022"));
 root.insertAdjacentHTML(
   "afterend",
   footerComponent("Copyright © 2022 ZsuperCalendars Ltd. All rights reserved")
@@ -60,21 +60,21 @@ root.insertAdjacentHTML(
 /* const days = ['S', 'M', 'T', 'W', 'Th', 'F', 'S']; */
 
 function dayComponent(day) {
-    return `
+  return `
         <div class="card">
             <time datetime="DD">${day}</time>
         </div>
     `;
-};
+}
 
 function monthCards(month) {
-    let componentData = "";
-    for ( let day = 1; day <= month.days; day++) {
-        componentData += dayComponent(day);
-    };
-    console.log(month.name);
-    let monthHtml = "";
-    monthHtml = `
+  let componentData = "";
+  for (let day = 1; day <= month.days; day++) {
+    componentData += dayComponent(day);
+  }
+  console.log(month.name);
+  let monthHtml = "";
+  monthHtml = `
         <section id="${month.id}" class="container">
             <div class="name">${month.name}</div>
             <hr>
@@ -91,9 +91,9 @@ function monthCards(month) {
                 <div class="day-container">${componentData}</div>
             </div>
         </section>
-    `
-    return monthHtml;
-};
+    `;
+  return monthHtml;
+}
 
 function init() {
   const root = document.querySelector("#root");
@@ -106,8 +106,10 @@ function init() {
 
   for (i = 0; i <= year.length - 1; i++) {
     const month = monthCards(year[i]);
-    root.insertAdjacentHTML("beforeend", month);
+    document.querySelector(".year-container").insertAdjacentHTML("beforeend", month);
   }
 }
 
 init();
+
+
