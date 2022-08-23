@@ -1,0 +1,94 @@
+body {
+  height: 100vh;
+}
+
+#root {
+  height: 85vh;
+
+  background-color: rgb(82, 132, 82);
+  color: rgb(92, 92, 21);
+
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+header {
+  height: 10vh;
+  font-size: xx-large;
+  background-color: rgba(111, 170, 88, 0.77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 5vh;
+  padding-left: 20px;
+  background-color: rgba(111, 170, 88, 0.77);
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  max-width: fit-content;
+}
+
+.container {
+  height: 100%;
+  border: 1px solid black;
+}
+
+hr {
+  width: 90%;
+}
+
+#jan,
+#febr,
+#marc,
+#apr,
+#may,
+#june,
+#july,
+#aug,
+#sept,
+#oct,
+#nov,
+#dec {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .name {
+    flex: 1;
+  }
+  
+  .days {
+    width: 100%;
+    padding-bottom: 5px;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .day-container {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    .card {
+      height: 16%;
+      width: 14%;
+    }
+  }
+}
+
+#july
+#aug
+#sept
+#oct
+#nov
+#dec
