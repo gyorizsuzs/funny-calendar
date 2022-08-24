@@ -114,7 +114,7 @@ function init() {
 
 init();
 
-function onClick(section) {
-  console.log(section);
-  section.classList.toggle("green");
-}
+monthCards.addEventListener("click", function() {
+    this.style.backgroundColor = "red";
+});
+
