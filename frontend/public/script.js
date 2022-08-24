@@ -106,10 +106,15 @@ function init() {
 
   for (i = 0; i <= year.length - 1; i++) {
     const month = monthCards(year[i]);
-    document.querySelector(".year-container").insertAdjacentHTML("beforeend", month);
+    document
+      .querySelector(".year-container")
+      .insertAdjacentHTML("beforeend", month);
   }
 }
 
 init();
 
-
+function onClick(section) {
+  console.log(section);
+  section.classList.toggle("green");
+}

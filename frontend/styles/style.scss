@@ -17,7 +17,7 @@ body {
 
 header {
   height: 5vh;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: xx-large;
   color: beige;
   background-color: rgba(82, 132, 82, 0.762);
@@ -34,7 +34,7 @@ footer {
   box-shadow: rgba(33, 35, 38, 0.257) 0px -10px 20px -1px;
   font-size: smaller;
   color: beige;
-  
+
   display: flex;
   align-items: center;
 }
@@ -52,17 +52,17 @@ footer {
   width: 95%;
 
   border: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
+
   .name {
     padding-top: 5px;
     flex: 1;
-    font-family: 'Dancing Script', cursive;
+    font-family: "Dancing Script", cursive;
     font-size: larger;
   }
 
@@ -88,7 +88,7 @@ footer {
       width: 100%;
       padding-bottom: 5px;
       flex: 1;
-      font-family: 'Aboreto', cursive;
+      font-family: "Aboreto", cursive;
       font-weight: bold;
       color: rgb(154, 138, 44);
 
@@ -100,13 +100,13 @@ footer {
         justify-content: center;
       }
     }
-  
+
     .day-container {
       height: 85%;
       flex: 4;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      font-family: 'Aboreto', cursive;
+      font-family: "Aboreto", cursive;
 
       .card {
         display: flex;
@@ -115,5 +115,4 @@ footer {
       }
     }
   }
-
 }
