@@ -75,7 +75,7 @@ function monthCards(month) {
   console.log(month.name);
   let monthHtml = "";
   monthHtml = `
-        <section id="${month.id}" class="container">
+        <section id="${month.id}" class="container" onclick="onClick(this)">
             <div class="name">${month.name}</div>
             <hr>
             <div class="inner-container">
@@ -93,6 +93,11 @@ function monthCards(month) {
         </section>
     `;
   return monthHtml;
+}
+
+function onClick(div) {
+  console.log(div);
+  div.classList.toggle("red");
 }
 
 function init() {
@@ -114,6 +119,11 @@ function init() {
 
 init();
 
-monthCards.addEventListener("click", function () {
+/* monthCards.addEventListener("click", function () {
   this.style.backgroundColor = "red";
 });
+
+document.getElementById("jan").addEventListener("click", function () {
+  this.stayle.backgroundColor = "red";
+});
+ */
