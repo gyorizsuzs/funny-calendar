@@ -114,7 +114,6 @@ function init() {
 
 init();
 
-monthCards.addEventListener("click", function() {
-    this.style.backgroundColor = "red";
+monthCards.addEventListener("click", function () {
+  this.style.backgroundColor = "red";
 });
-
