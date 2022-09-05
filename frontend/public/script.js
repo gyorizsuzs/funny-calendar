@@ -100,6 +100,10 @@ function onClick(div) {
   div.classList.toggle("red");
 }
 
+/* document.getElementById("jan").addEventListener("click", function () {
+  document.body.classList.toggle("backgroundjan");
+}); */
+
 function init() {
   const root = document.querySelector("#root");
 
