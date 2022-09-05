@@ -95,13 +95,22 @@ function monthCards(month) {
   return monthHtml;
 }
 
-function onClick(div) {
+/* function onClick(div) {
   console.log(div);
   div.classList.toggle("red");
-}
+} */
 
-/* document.getElementById("jan").addEventListener("click", function () {
-  document.body.classList.toggle("backgroundjan");
+/* document.getElementById("jan").addEventListener("click", addBackground);
+
+function addBackground() {
+  document.getElementById("jan").style.backgroundImage =
+    "url(../frontend/images/jan.jpg)";
+} */
+
+/* let jan = document.querySelector("#jan");
+let inner = document.querySelector(".inner-container");
+jan.addEventListener("click", () => {
+  inner.classList.toggle("background-jan");
 }); */
 
 function init() {
