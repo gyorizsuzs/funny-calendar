@@ -169,16 +169,13 @@ footer {
     height: 80%;
     width: 80%;
     transform: rotate(45deg);
+    background-image: url(/frontend/images/jan.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
   }
 }
-.background-jan {
-  background-image: url(/frontend/images/jan.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 @media screen and (max-width: 980px) {
   #febr {
     height: 75%;
