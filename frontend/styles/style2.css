@@ -122,7 +122,18 @@ footer {
   width: calc(100% / 7);
 }
 
+@media screen and (max-width: 1200px) {
+  #root {
+    background: url(../images/main.jpg);
+    background-size: 100%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  #root {
+    background: none;
+  }
+
   .month-1 {
     background: url(../images/jan.jpg);
     background-size: 100%;
