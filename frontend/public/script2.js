@@ -112,6 +112,14 @@ function loadEvent() {
       e.classList.toggle("days-effect");
     });
   });
+
+  const rotate = document.querySelectorAll(".month-container");
+
+  rotate.forEach((e) => {
+    e.addEventListener("click", () => {
+      e.classList.toggle("rotate-effect");
+    });
+  });
 }
 
 window.addEventListener("load", loadEvent);

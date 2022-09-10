@@ -4,6 +4,7 @@
 
 body {
   height: 100%;
+  /* max-width: 1200px; */
   background-color: rgba(82, 132, 82, 0.762);
   color: beige;
 }
@@ -66,6 +67,7 @@ footer {
   font-size: 2rem;
   text-align: center;
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 .days-week {
@@ -98,6 +100,10 @@ footer {
   line-height: calc(14rem / 8);
 }
 
+.day {
+  cursor: pointer;
+}
+
 .month-container:nth-child(n + 7) .days-container {
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +122,7 @@ footer {
   width: calc(100% / 7);
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1024px) {
   .month-1 {
     background: url(../images/jan.jpg);
     background-size: 100%;
@@ -179,5 +185,10 @@ footer {
 }
 
 .days-effect {
-  background-color: olivedrab;
+  background-color: beige;
+  color: rgb(154, 138, 44);
+}
+
+.rotate-effect {
+  transform: rotate(180deg);
 }
