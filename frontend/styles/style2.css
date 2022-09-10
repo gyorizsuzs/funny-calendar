@@ -22,12 +22,13 @@
 
 body {
   height: 100%;
-  background-color: #1a2639;
+  background-color: rgba(82, 132, 82, 0.762);
+  color: beige;
 }
 
 #root {
   margin: 6rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "Dancing Script", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,9 +38,23 @@ body {
 .header-container {
   height: 4rem;
   width: 100%;
-  background-color: #d9dad7;
+  color: beige;
+  background-color: rgba(82, 132, 82, 0.762);
+  box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -5px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 3rem;
+  padding-left: 20px;
+  background-color: rgba(82, 132, 82, 0.762);
+  box-shadow: rgba(33, 35, 38, 0.257) 0px -10px 20px -1px;
+  font-size: 1rem;
+  color: beige;
+
+  display: flex;
   align-items: center;
 }
 
@@ -60,12 +75,13 @@ body {
 
 .month-container {
   width: 14rem;
-  background-color: #3e4a61;
+  background-color: rgba(82, 132, 82, 0.762);
   margin: 0.5rem;
 }
 
 .month-name {
-  color: #c24d2c;
+  color: beige;
+  font-size: 2rem;
   text-align: center;
   padding: 0.5rem 0;
 }
@@ -73,7 +89,7 @@ body {
 .days-week {
   width: 100%;
   height: calc(14rem / 8);
-  color: #c24d2c;
+  color: rgb(154, 138, 44);
   background-color: #d9dad7;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -81,15 +97,15 @@ body {
 
 .day-name {
   width: 2rem;
-  color: #c24d2c;
+  color: rgb(154, 138, 44);
   text-align: center;
   line-height: calc(14rem / 8);
 }
 
 .day:hover {
-  cursor: pointer;
-  color: #c24d2c;
-  background-color: #d9dad7;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1px solid #cccccc;
+  background-color: transparent;
 }
 
 .days-container {
@@ -175,7 +191,7 @@ body {
   }
 
   .month-12 {
-    background: url(../images/dec.jpg;
+    background: url(../images/dec.jpg);
     background-size: 100%;
   }
 }

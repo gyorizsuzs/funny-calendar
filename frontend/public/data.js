@@ -72,3 +72,5 @@ const year = [
     days: 31,
   },
 ];
+
+const daysOfWeek = ["M", "T", "W", "T", "F", "S", "S"];

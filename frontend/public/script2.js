@@ -18,6 +18,7 @@ const headerComponent = function (year) {
     </div>
   `;
 };
+
 const yearComponent = function () {
   return /*html*/ `
     <div class="year-container"></div>
@@ -59,6 +60,12 @@ const placeholderDayComponent = function () {
   `;
 };
 
+const footerComponent = function (copyrights) {
+  return `
+      <footer>${copyrights}</footer>
+      `;
+};
+
 function loadEvent() {
   document
     .querySelector("#root")
@@ -66,6 +73,10 @@ function loadEvent() {
   document
     .querySelector("#root")
     .insertAdjacentHTML("beforeend", yearComponent());
+  root.insertAdjacentHTML(
+    "afterend",
+    footerComponent("Copyright © 2022 ZsuperCalendars Ltd. All rights reserved")
+  );
 
   for (let m = 0; m < year.length; m++) {
     const date = new Date(`${year[m].name} 01, 2022`);
