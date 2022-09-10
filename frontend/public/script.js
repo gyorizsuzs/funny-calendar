@@ -1,3 +1,7 @@
+// griddel el kell erni h azon a napon kezdje a szamolast ahol kezdodik a honap
+// onclick eventet kell tenni minden honapra
+// grid meg flex cuccokat hagyjuk.......... csak ha nem tul bonyi
+
 const headerComponent = function (title) {
   return `
           <header>
@@ -95,10 +99,10 @@ function monthCards(month) {
   return monthHtml;
 }
 
-/* function onClick(div) {
+function onClick(div) {
   console.log(div);
   div.classList.toggle("red");
-} */
+}
 
 /* document.getElementById("jan").addEventListener("click", addBackground);
 
@@ -134,9 +138,8 @@ init();
 
 /* monthCards.addEventListener("click", function () {
   this.style.backgroundColor = "red";
-});
+}); */
 
-document.getElementById("jan").addEventListener("click", function () {
-  this.stayle.backgroundColor = "red";
-});
- */
+/* document.getElementById("jan").addEventListener("click", function () {
+  this.style.backgroundColor = "red";
+}); */
