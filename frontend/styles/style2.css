@@ -134,7 +134,7 @@ footer {
   width: calc(100% / 7);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 920px) {
   .month-1 {
     background: url(../images/jan.jpg);
     background-size: 100%;
