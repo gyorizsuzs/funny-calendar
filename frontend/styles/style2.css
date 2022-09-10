@@ -1,17 +1,17 @@
 .first-color {
-  background: #c4f267;
+  background: #d9dad7;
 }
 
 .second-color {
-  background: #3bc22c;
+  background: #c24d2c;
 }
 
 .third-color {
-  background: #2a543d;
+  background: #3e4a61;
 }
 
 .fourth-color {
-  background: #1d412d;
+  background: #1a2639;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap");
@@ -22,7 +22,7 @@
 
 body {
   height: 100%;
-  background-color: #22432d;
+  background-color: #1a2639;
 }
 
 #root {
@@ -37,14 +37,14 @@ body {
 .header-container {
   height: 4rem;
   width: 100%;
- /*  background-color: #22271a; */
+  background-color: #d9dad7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .year {
-  color: #f8fdf9;
+  color: #3e4a61;
   font-weight: 300;
   font-size: 3rem;
   margin: 0 auto;
@@ -60,12 +60,12 @@ body {
 
 .month-container {
   width: 14rem;
-  background-color: #326326;
+  background-color: #3e4a61;
   margin: 0.5rem;
 }
 
 .month-name {
-  color: #b69b11;
+  color: #c24d2c;
   text-align: center;
   padding: 0.5rem 0;
 }
@@ -73,15 +73,15 @@ body {
 .days-week {
   width: 100%;
   height: calc(14rem / 8);
-  color: #43b6d0;
-  background-color: #c7f669;
+  color: #c24d2c;
+  background-color: #d9dad7;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 
 .day-name {
   width: 2rem;
-  color: #6d2612;
+  color: #c24d2c;
   text-align: center;
   line-height: calc(14rem / 8);
 }
@@ -175,7 +175,7 @@ body {
   }
 
   .month-12 {
-    background: url(../images/dec.jpg
+    background: url(../images/dec.jpg;
     background-size: 100%;
   }
 }
